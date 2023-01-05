@@ -6,16 +6,27 @@
     --l-child-col:#3F84E5;
     --r-child-col:#001524;
 }
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 
 }
+
+
+a{
+    text-decoration: none;
+}
+a:visited{
+    color:#fff;
+}
 body{
-    background-color: rgb(103, 101, 250);
     font-family: 'Barlow', sans-serif;
     color: #fff;
+    line-height: 1.6rem;
+    letter-spacing: 0.08rem;
 }
 
 h1{
@@ -26,12 +37,23 @@ p{
     font-size: var(--p-size);
 }
 
+i{
+    cursor: pointer;
+}
+
 .container{
     display: flex;
     flex-direction: row;
     height: 100vh;
     align-items: center;
     text-align: center;
+}
+
+.container a{
+    border: 1px #fff solid;
+    padding: 5px;
+    margin-bottom: 3rem;
+    display: inline-block;
 }
 
 .left-child{
@@ -41,18 +63,22 @@ p{
 }
 
 .left-child:hover{
-    flex-basis: 75%;
+    flex-basis: 53%;
 }
 
 .right-child{
     flex-basis: 50%;
-    text-align: left;
+    text-align: center;
     background-color: #001524;
-    transition: 0.5s;
+    transition: 0.3s;
+}
+
+.right-child h1, .right-child p{
+    text-align: left;
 }
 
 .right-child:hover{
-    flex-basis: 75%;
+    flex-basis: 53%;
 }
 
 
@@ -66,6 +92,24 @@ p{
     margin-top: 50%;
     margin-bottom: 2rem;
 }
+
+.container>section>p{
+    margin-bottom: 3rem;
+}
+
+.left-child a:hover{
+    background-color: #001524;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.right-child a:hover{
+    background-color:#3F84E5 ;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
 
 
 
@@ -83,4 +127,91 @@ p{
         flex-basis:100%;
         height: 100%;
     }
+}
+
+.project-container{
+    background-color: var(--r-child-col);
+    height: 100vh;
+    color:#fff;
+   
+}
+
+.slider{
+    height: inherit;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide{
+    position: absolute;
+    top: 30%;
+    padding-inline: 5.8rem;
+    transition: 0.2s;
+    text-align: left;
+    text-align: center;
+}
+
+.slide >h1{
+    text-align: center;
+    display: block;
+    margin-bottom: 5%;
+}
+
+.slide > h2, .slide > p, .deployment-links{
+    margin-bottom: 2%;
+    padding-inline: 2%;
+}
+
+.deployment-links{
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 1rem;
+}
+
+.deployment-links:hover{
+    background-color:#3F84E5;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.project-container i {
+  position: absolute;
+ 
+  cursor: pointer;
+}
+
+
+
+.fa-backward {
+  top: 50%;
+  left: 2%;
+}
+
+.fa-forward {
+  top: 50%;
+  right: 2%;
+}
+
+@media screen and (max-width:700px) {
+    .slide{
+        top: 20%;
+        padding-inline: 3rem;
+    }
+
+    .slide >h1{
+    margin-bottom: 15%;
+    text-align: center;
+    }
+
+    .slide>h2{
+        display: block;
+        text-align: center;
+    }
+
+.slide > h2, .slide > p, .deployment-links{
+    margin-bottom: 12%;
+    padding-inline: 2%;
+    display: block;
+    text-align: center;
+}
 }
