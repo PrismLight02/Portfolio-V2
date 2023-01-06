@@ -10,11 +10,21 @@
 </head>
 <body>
     <main>
-        <div class="container">
+
+        <section class="nav">
+            <nav>
+                <ul class="navigation">
+                    <li class="navigation__item"><a href="#home">Home</a></li>
+                    <li class="navigation__item" ><a href="#skills">Skills</a></li>
+                    <li class="navigation__item" ><a href="#projects">Projects</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <div id="home" class="container">
             <section class="left-child">
                 <h1>Vigneshwar P</h1>
                 <p>Frontend developer, Fullstack developer</p>
-                <a href="./projects.html">Projects</a>
 
             </section>
 
@@ -23,14 +33,145 @@
                 <p>I finished my degree in Computer science from SRM Chennai at the year 2022, and I'm looking to become a frontend or fullstack developer.
                     When i'm not working on programming related stuff, my favorite pastime includes playing video games and listening to music.
                 </p>
-                <a>Skills</a>
                 <ul>
                     <li><i class="fa-brands fa-square-github fa-3x"></i></li>
                 </ul>
             </section>
         </div>
         
+         <div id="skills" class="skills-container">
+             <h1>My Skillset</h1>
+             <div class="skills-wrapper">
+                 <div class="col-1">
+                     <ul class="skill-icons">
+                         <li>
+                             <img src="https://img.icons8.com/color/96/null/html-5--v1.png" />
+                             <p>HTML</p>
+                         </li>
+                         <li>
+                             <img src="https://img.icons8.com/color/96/null/css3.png" />
+                             <P>CSS</P>
+                         </li>
+                         <li>
+                             <img src="https://img.icons8.com/color/96/null/javascript--v1.png" />
+                             <p>JAVASCRIPT</p>
+                         </li>
+                     </ul>
+                 </div>
+
+                 <div class="col-2">
+                     <ul class="skill-icons">
+                         <li>
+                             <img src="https://img.icons8.com/color/96/null/nodejs.png" />
+                             <p>NODE.JS</p>
+                         </li>
+                         <li>
+                             <img src="https://img.icons8.com/ios/100/null/express-js.png" />
+                             <p>EXPRESS.JS</p>
+                         </li>
+                         <li>
+                             <img src="https://img.icons8.com/color/96/null/mongodb.png" />
+                             <p>MONGODB</p>
+                         </li>
+                     </ul>
+                 </div>
+
+                 <div class="col-3">
+                     <ul class="skill-icons">
+                         <li>
+                             <img src="https://img.icons8.com/ultraviolet/100/null/react--v1.png" />
+                             <p>REACT</p>
+                         </li>
+
+                         <li>
+                             <img src="https://img.icons8.com/color/96/null/redux.png" />
+                             <p>REDUX TOOLKIT</p>
+                         </li>
+
+                         <li>
+                             <img src="https://img.icons8.com/color/100/null/git.png" />
+                             <p>GIT</p>
+                         </li>
+                     </ul>
+                 </div>
+             </div>
+         </div>
+
+         <section class="project">
+             <div id="projects" class="project-container">
+                 <div class="slider">
+
+                     <!-- slide 1 -->
+                     <div class="slide">
+                         <h1 class="sections section-second flex-heading">Project no:1</h1>
+                         <h2>IMDB clone</h2>
+                         <p class="flex-p">A simple website which is a clone of IMDB where the user can add, edit,
+                             delete
+                             and
+                             view movies, The user can also search for any particular movies present in the database.
+                             This website was made with the help of React, Express, NodeJS,
+                             mongoose, React routers, Tailwind Css and redux.
+                         </p>
+                         <div>
+                             <a class="deployment-links" href="https://imdb-clone-a0j7.onrender.com"
+                                 target="_blank">Deployment link (click me)</a>
+
+                         </div>
+                     </div>
+
+                     <!-- slide 2 -->
+                     <div class="slide">
+                         <h1 class="sections section-second flex-heading">Project no:2</h1>
+                         <h2>ShoppingCart</h2>
+                         <p class="flex-p">A simple website where the user is able to add , remove items to a cart and
+                             further see the total cost.
+                             The user is also able to add additional listings to the website. This website was made with
+                             the help of React, Express, NodeJS,
+                             mongoose, React routers and Tailwind Css.
+                         </p>
+                         <a class="deployment-links" href="https://ecommerce-shoppingcart.onrender.com/"
+                             target="_blank">Deployment link (click me)</a>
+                     </div>
+
+                     <!-- slide 3 -->
+                     <div class="slide">
+                         <h1 class="sections section-first flex-heading">Project no:3</h1>
+                         <h2>Phonebook</h2>
+                         <p class="flex-p">A single page website, where the user is able to add and view contacts
+                             they've added. The user is also able to
+                             search a particular contact that they require. This website was made with the help of
+                             React, Express, NodeJS and mongoose.
+                         </p>
+                         <a class="deployment-links" href="https://phonebook-r9yw.onrender.com/"
+                             target="_blank">Deployment link (click me)</a>
+                     </div>
+
+                     <!-- slide 4 -->
+                     <div class="slide">
+                         <h1 class="sections section-second flex-heading">Project no:4</h1>
+                         <h2>Weather API</h2>
+                         <p class="flex-p">A website, where the user enters a location supported by the <a
+                                 href="https://openweathermap.org/api" style="color: Orange;"
+                                 target="_blank">openweathermap.org</a>
+                             API. the website was made with the help of basic html, css, Bootstrap and NodeJS along
+                             with Express.
+                         </p>
+                         <a class="deployment-links" href="https://my-custom-weatherapi.herokuapp.com/"
+                             target="_blank">Deployment link (click me)</a>
+                     </div>
+
+                     <!-- Control buttons -->
+                     <i class="fa-solid fa-forward"></i>
+
+                     <i class="fa-solid fa-backward"></i>
+
+                 </div>
+             </div>
+         </section>
+
     </main>
+
+        <script src="./script.js" defer></script>
 
 </body>
 </html>
