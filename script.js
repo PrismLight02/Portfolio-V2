@@ -8,7 +8,7 @@ console.log(maxSlide)
 
 
 slides.forEach((slide,index)=>{
-  slide.style.transform = `translateX(${index * 100}%)`;
+  slide.style.transform = `translateX(${index * 100000}%)`;
 })
 
 next.addEventListener("click",()=>{
@@ -18,9 +18,9 @@ next.addEventListener("click",()=>{
     else{
         currSlide++
     }
-
+    
     slides.forEach((slide,index)=>{
-        slide.style.transform=`translateX(${10000*(index- currSlide)}%)`
+        slide.style.transform = `translateX(${100000*(index- currSlide)}%)`
     })
 })
 
