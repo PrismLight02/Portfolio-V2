@@ -72,7 +72,12 @@ i{
     padding: 1rem 1.5rem;
 }
 
-
+.git-link{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
 
 
 .container{
@@ -88,6 +93,12 @@ i{
     margin-bottom: 3rem;
     display: inline-block;
 }
+
+.git-link a{
+    display: flex;
+    align-items: center;
+}
+
 
 .left-child{
     flex-basis: 50%;
