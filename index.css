@@ -212,6 +212,7 @@ i{
     transition: 0.24s;
     text-align: left;
     text-align: center;
+    width: 100%;
 }
 
 .slide >h1{
